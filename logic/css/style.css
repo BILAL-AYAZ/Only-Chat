@@ -1,0 +1,125 @@
+body {
+    height: 100vh;
+    /*background-image: linear-gradient( rgb(161, 144, 144),rgb(161, 144, 144),rgb(162, 144, 143.5),white,white);*/
+    background-image: linear-gradient(rgb(233, 239, 229),rgb(233, 239, 229), rgb(30, 33, 31));
+}
+
+h2 {
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.logo {
+    transform: rotate(15deg);
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+}
+
+.container {
+    border-radius: 15px;
+    border: 3px solid black;
+    max-width: 955px;
+    padding: 33px;
+    overflow-y: auto;
+    margin: auto;
+    height: 50vh;
+    margin-bottom: 23px;
+    margin-top: 5px;
+}
+
+.message {
+    font-size: 1.8rem;
+    width: 50%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 7.65px;
+}
+
+.right {
+    background-color: rgb(186, 234, 246);
+    float: right;
+    clear: both;
+}
+
+.left {
+    color: #ffff;
+    background-color: rgb(92, 121, 128);
+    float: left;
+    clear: both;
+}
+
+#send-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+
+#messageInp {
+    padding: 10px;
+    font-size: 1.6rem;
+    width: 80%;
+    border: 1.759px solid black;
+    border-radius: 3.89px;
+    height: 34px;
+}
+
+.btn {
+    width: 9%;
+    cursor: pointer;
+    border: 1.3px solid black;
+    border-radius: 4.2px;
+    height: 3.4rem;
+    margin-left: 10px;
+}
+.blur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.all{
+    z-index: 10;
+}
+.sign-in{
+    z-index: 100;
+    position: absolute;
+    left: 400px;
+    top: 250px;
+}
+.sign-in input{
+    font-size: 1.9rem;
+    height: 2.8rem;
+    width: 30rem;
+    border-radius: 7px;
+    border: none;
+    padding: 1.3rem;
+}
+.hide{
+    display: none;
+}
+@media (max-width:750px){
+    .message{
+        width: 70%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .sign-in input{
+        font-size: 1.2rem;
+        width: 17rem;
+        background-color: aquamarine;
+        margin-left: -350px;
+    }
+}
