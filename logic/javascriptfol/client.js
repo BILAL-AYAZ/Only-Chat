@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
     messageInput.value = ""
 })
 nameInput.addEventListener('keydown', (evt) => {
-    if (evt.key === 'Enter') {
+    if (evt.key === 'Enter' || evt.keyCode === 13) {
         fname = nameInput.value;
         socket.emit('new-user-joined', fname);
         console.log(fname)
